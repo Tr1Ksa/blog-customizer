@@ -73,7 +73,7 @@ export const ArticleParamsForm = ({
 			{/* Сайдбар с формой */}
 			<aside
 				className={clsx(styles.container, {
-					[styles.container_open]: isSidebarOpen, // Условный класс для открытого состояния
+					[styles.container_open]: isSidebarOpen,
 				})}>
 				<form
 					className={styles.form}

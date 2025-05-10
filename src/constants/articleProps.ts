@@ -35,7 +35,7 @@ export const fontFamilyOptions: OptionType[] & {
 
 export const fontColors: OptionType[] = [
 	{
-		title: 'Черный',
+		title: 'Чёрный',
 		value: '#000000',
 		className: 'font-black',
 		optionClassName: 'option-black',
@@ -98,7 +98,7 @@ export const backgroundColors: OptionType[] = [
 		optionClassName: 'option-white',
 	},
 	{
-		title: 'Черный',
+		title: 'Чёрный',
 		value: '#000000',
 		className: 'bg-black',
 		optionClassName: 'option-black',

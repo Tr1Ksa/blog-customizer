@@ -10,10 +10,8 @@ type ArrowButtonProps = {
 	isOpen: boolean;
 	onClick: OnClick;
 };
-
 export const ArrowButton = ({ isOpen, onClick }: ArrowButtonProps) => {
 	return (
-		/* Не забываем указаывать role и aria-label атрибуты для интерактивных элементов */
 		<div
 			role='button'
 			aria-label='Открыть/Закрыть форму параметров статьи'

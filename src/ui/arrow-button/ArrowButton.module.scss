@@ -21,6 +21,10 @@
 	background-color: #787878;
 }
 
+.container:-moz-suppressed {
+	background-color: #d7d7d7;
+}
+
 .container_open {
 	transform: translate(616px);
 }

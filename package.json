@@ -70,7 +70,8 @@
 		"prepare": "husky install",
 		"commit": "npm run test && cz",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"postinstall": "npx playwright install --with-deps"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -79,6 +80,7 @@
 	},
 	"dependencies": {
 		"clsx": "^2.1.0",
+		"playwright": "^1.52.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},

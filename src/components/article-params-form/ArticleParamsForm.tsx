@@ -27,19 +27,17 @@ import { useOutsideClickClose } from 'src/ui/select/hooks/useOutsideClickClose';
 
 // Тип пропсов компонента
 type ArticleParamsFormProps = {
-	articleState: ArticleStateType;
-	setArticleState: (props: ArticleStateType) => void;
+	onStateChange: (props: ArticleStateType) => void;
 };
 
 // Основной компонент формы параметров статьи
 export const ArticleParamsForm = ({
-	articleState,
-	setArticleState,
+	onStateChange,
 }: ArticleParamsFormProps) => {
 	// Состояние открытия/закрытия сайдбара
 	const [isSidebarOpen, setSidebarIsOpen] = useState(false);
 	// Локальное состояние формы
-	const [formState, setFormState] = useState(articleState);
+	const [formState, setFormState] = useState(defaultArticleState);
 	// Ref для обработки кликов вне элемента
 	const ref = useRef<HTMLDivElement | null>(null);
 
@@ -53,13 +51,13 @@ export const ArticleParamsForm = ({
 	// Обработчик отправки формы
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		setArticleState(formState);
+		onStateChange(formState);
 	};
 
 	// Обработчик сброса формы  по умолчанию
 	const handleReset = () => {
 		setFormState(defaultArticleState);
-		setArticleState(defaultArticleState);
+		onStateChange(defaultArticleState);
 	};
 
 	return (

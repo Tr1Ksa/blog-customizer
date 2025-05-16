@@ -14,9 +14,8 @@
 	right: 12px;
 	width: 24px;
 	margin-top: -12px;
-	transition: transform 0.2s ease-in-out, margin-top 0.2s ease-in-out;
 	overflow-y: auto;
-	
+	transition: transform 0.2s ease-in-out, margin-top 0.2s ease-in-out;
 }
 
 .placeholder {
@@ -80,7 +79,7 @@
 }
 
 .option:hover {
-	background: var(--grey, #D7D7D7);
+	background: var(--grey, #d7d7d7);
 }
 
 .option:active {
